@@ -1,3 +1,231 @@
-p{
-    color: coral;
+html{
+    background-color: hsl(0, 0%, 65%);
+    padding: 5%;
+
+}
+
+ 
+
+body{
+
+    background-color: hsl(0, 0%, 86%);
+
+    padding: 5%;
+
+}
+
+ 
+
+div.preamble, div.requirements, div.benefits{
+
+ 
+
+color: hsla(180, 0%, 25%, 0.9);
+
+background-color: white;
+
+ 
+
+}
+
+ 
+
+header h1{
+
+    background-color: hsla(0, 89%, 30%, 0.9);
+
+}
+
+ 
+
+footer{
+
+    background-color: hsla(20, 99%, 30%, 0.7);
+
+}
+
+ 
+
+div.participation{
+
+    background-color: hsla(15, 75%, 45%, 0.9);
+
+}
+
+ 
+
+aside.sidebar{
+
+    background-color: hsla(180, 3%, 23%, 0.6);
+
+}
+
+ 
+
+div,article,section,header,nav,figure,line{
+
+    position: relative;
+
+   
+
+}
+
+ 
+
+header h1{
+
+    position:relative;
+
+    left: 100px;
+
+}
+
+ 
+
+aside.sidebar{
+
+    position: absolute;
+
+    top: 3%;
+
+    right: 0;
+
+    width: 25%;
+
+}
+
+ 
+
+footer{
+
+    position: fixed;
+
+    width: 30%;
+
+    left: 30%;
+
+    bottom: 0px;
+
+}
+
+ 
+
+section.intro{
+
+    width: 50%;
+
+}
+
+section.intro div.preamble{
+    margin-left: -30%;
+    padding: 5% 5% 5% 30%;
+    border: rgb(255, 115, 80) dashed 5px;
+} 
+
+div.explanation{
+
+    width: 40%;
+
+    float: left;
+}
+
+ 
+
+div.participation{
+
+    margin-left: 50%;
+    margin-bottom: 10%;
+
+}
+
+ 
+
+div.benefits{
+
+    margin-right: 50%;
+
+    width: 50%;
+}
+
+ 
+
+div.requirements{
+
+    float: 10%;
+
+    margin-left: 50%;
+
+    width: 50%;
+
+    top: -250.5px;
+
+}
+
+/*** font ***/
+
+body{
+    font-family: 'Arbutus', cursive;
+
+}
+
+/*** local font ***/
+
+@font-face {
+    font-family: 'newfont';
+    src: url('../fonts/chunkfive.woff');
+}
+
+/**header h1{
+    font-family: 'newfont';
+    background-image: url('../img/zengarden.gif');
+}**/
+
+a{
+    color:rgb(16, 34, 34);
+    text-decoration: none;
+}
+
+/* nav bar on top*/
+#zen-resources{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(48, 48, 48);
+}
+
+#zen-resources h3{
+    display: none;
+}
+
+#zen-resources ul li{
+    display: inline-block;
+    padding-right: 5%;
+    list-style: none;
+}
+
+#zen-resources a{
+    color: white;
+}
+
+/* hover, active practice */
+p:active{
+    border:coral 5px solid;
+}
+
+h3:active~p{
+    visibility: hidden;
+}
+
+li:first-of-type{
+    color: purple;
+}
+
+p::first-letter{
+    font-size: 120%;
+    text-transform: uppercase bold;
+}
+
+p:nth-child(2n):hover{
+    background-color: black;
 }
